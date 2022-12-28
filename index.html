@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Official AstonHack Website</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.google.com/specimen/Work+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 11, 2021 9:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  // document.getElementById("countdown").innerHTML = "<div class='counter-days'>" + days + "</div>" + "<div class='counter-hours'>" + hours + "</div>"
+  // + "<div class='counter-minutes'>" + minutes + "</div>"+ "<div class='counter-seconds'>" + seconds + "</div>";
+
+  document.getElementById("days").innerText = days,
+          document.getElementById("hours").innerText = hours,
+          document.getElementById("minutes").innerText = minutes,
+          document.getElementById("seconds").innerText = seconds;
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "LIVE!";
+  }
+}, 1000);
+</script>
+
+</head>
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html" class="scrollto"><img src="img/logo/logo.png"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#faq">F.A.Q</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li class="discord"><a href="https://discord.gg/Q7Yyx9bZCv">Join Discord</a></li> -->
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <img src="img/logo/logo.png">
+      <h1 class="mb-4 pb-0"><span>Aston</span>Hack</h1>
+      <!-- <p class="mb-4 pb-0">2021</p> -->
+      <!-- <a href="live.html" class="about-btn scrollto">View Live Page</a> -->
+      <div id="countdown">
+      <ul class="timer">
+        <li><span id="days"></span>Days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+    <div class="ticket-button">
+      <a class="ticket-link" href='https://www.eventbrite.co.uk/e/astonhack7-tickets-206598952027'>get tickets</a>
+    </div>
+      
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <center><h2>ABOUT THE EVENT</h2></center>
+            <p>We’re excited to announce the official launch for AstonHack7.</p>
+            <p>Our Hackathon will run from the 11th to 12th of December and will be an enjoyable, creative and inspiring experience for hackers and organizers alike</p>
+            <p>Hackathons are invention marathons where attendees dream up and bring to life ideas for apps, websites,
+              robots, and more.We are inviting  students to join us for 24 hours while we develop the ideas for the future!</p>
+              <p>Whether you’re just getting started or you’ve been programming for years, hackathons are a great place to learn new skills,
+                build your network, find jobs, and most importantly have fun. <p>
+          </div>
+          <div class="col-lg-3">
+            <center><h3>Where</h3>
+            <p>Aston University Main Building</p></center>
+          </div>
+          <div class="col-lg-3">
+            <center><h3>When</h3>
+            <p>Saturday 11th - Sunday 12th
+              <br>
+              December 2021
+            </p></center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!--==========================
+          Gallery Section
+        ============================-->
+        <section id="gallery" class="wow fadeInUp">
+
+          <div class="container">
+            <div class="section-header">
+              <h2>GALLERY</h2>
+            </div>
+          </div>
+
+          <div class="container-fluid venue-gallery-container">
+            <div class="row no-gutters">
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/4.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/4.jpg" alt="top view of Aston University" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/1.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/1.jpg" alt="Side view of Aston University" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/2.png" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/2.png" alt="Student Union building" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/3.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/3.jpg" alt="Reception of the Student Union building" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/5.png" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/5.png" alt="Aston Hack event photo" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/6.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/6.jpg" alt="Aston hack team" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/7.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/7.jpg" alt="Students working on a minature race track project" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/8.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/8.jpg" alt="Aston hack presentation" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/9.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/9.jpg" alt="Person using Virtual Reality googles" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/10.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/10.jpg" alt="Lecture room rows filled with students" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/11.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/11.jpg" alt="Students forming teams" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="venue-gallery">
+                  <a href="img/gallery/12.jpg" class="venobox" data-gall="venue-gallery">
+                    <img src="img/gallery/12.jpg" alt="Aston hack team working on a project" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--==========================
+      Sponsors Section
+      ============================-->
+      <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+      <div class="section-header">
+      <h2>Sponsors</h2>
+      </div>
+
+    <div class="row no-gutters supporters-wrap clearfix justify-content-center">
+
+      <div class="col-md-4 mr-2 mb-2">
+        <div class="supporter-logo-gold">
+          <a href="https://majestic.com/"><img src="img/supporters/7.png" class="img-fluid" alt="Majectic sponsor logo"></a>
+        </div>
+      </div>
+
+       <div class=" col-md-4 mb-2">
+        <div class="supporter-logo">
+          <a href="https://www.cx-squared.com/"><img src="img/supporters/cx2.png" class="img-fluid silver" alt="cx squared sponsor logo"></a>
+        </div>
+      </div>
+
+      <!--<div class=" col-md-4">
+        <div class="supporter-logo">
+          <a href="https://www.codewizards.co.uk/"><img src="img/supporters/3.png" class="img-fluid" alt=""></a>
+        </div>
+      </div>
+
+    </div>-->
+
+    <!-- <div class="row no-gutters supporters-wrap clearfix"> -->
+
+      <div class="col-md-4 mr-2">
+        <div class="supporter-logo">
+          <a href="https://www.bcs.org/membership/member-communities/birmingham-branch"><img src="img/supporters/bcs.png" class="img-fluid" alt=""></a>
+        </div>
+      </div>
+      
+       <div class="col-md-4 mb-2">
+        <div class="supporter-logo">
+          <a href="https://cs.aston.ac.uk/industryclub/"><img src="img/supporters/9.png" class="img-fluid" alt=""></a>
+        </div>
+      </div> 
+      <div class="col-md-4 mb-2 mr-2">
+        <div class="supporter-logo">
+          <a href="https://tcs.com/"><img src="img/supporters/tcs.png" class="img-fluid" alt=""></a>
+        </div>
+      </div> 
+      
+      <div class="col-md-4">
+        <div class="supporter-logo">
+          <a href="https://www.beazley.com/uk"><img src="img/supporters/Beazley.png" class="img-fluid" alt=""></a>
+        </div>
+      </div> 
+
+      <div class="col-md-4 mr-2">
+        <div class="supporter-logo">
+          <a href="https://www.phoebus.co.uk/"><img src="img/supporters/5.png" class="img-fluid" alt=""></a>
+        </div>
+      </div> 
+
+    </div> 
+
+  <br />
+
+    <div class="container">
+    <div class="section-header">
+    <h2>Partners</h2>
+    </div>
+
+     <div class="row no-gutters supporters-wrap clearfix justify-content-center">
+
+    <div class="col-lg-3 col-md-4 col-xs-6">
+      <div class="supporter-logo">
+        <a href="https://hackathons.org.uk/"><img src="img/partners/hackathonsuk.svg" class="img-fluid" alt="hackathons uk partner logo" /></a>
+      </div>  
+    </div>
+
+    <!--<div class="col-lg-3 col-md-4 col-xs-6">
+      <div class="supporter-logo">
+        <a href="https://hack.productions/"><img src="img/partners/hackproduction.png" class="img-fluid" alt=""></a>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-xs-6">
+      <div class="supporter-logo">
+        <a href="https://mlh.io/"><img src="img/partners/mlhwhitelogo.png" class="img-fluid" alt=""></a>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-xs-6">
+      <div class="supporter-logo">
+        <a href="http://hackp.ac/mlh-stickermule-hackathons"><img src="img/partners/stickermule.png" class="img-fluid" alt=""></a>
+      </div>
+    </div> -->
+
+    </div>
+
+    </div>
+
+      </div>
+
+      </section>
+
+      <!--==========================
+        Schedule Section
+      ============================-->
+      <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>EVENT SCHEDULE</h2>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">2021/22</a>
+            </li>
+          </ul>
+
+          <div class="tab-content row justify-content-center">
+
+            <!-- Schdule Day 1 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+              <div class="row schedule-item">
+                <div class="col-md-10">
+                  <h4>Day 1</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>09:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Hackathon Check-in Desk Opens</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Opening Ceremony</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Hacking Begins!</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 1 - Majestic</h4>
+                  <p>Team Building Workshop</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Lunch</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>2:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 2 - Hackathons UK</h4>
+                  <p>How to make a Discord Bot Workshop</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>3:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 3 - ACSS</h4>
+                  <p>GitHub for Beginners Workshop</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>4:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 4 - Majestic</h4>
+                  <p>Bobby Tables</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>5:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 5 - Hackathon UK</h4>
+                  <p>Cup Stacking Challenge</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>7:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Dinner</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>8:30 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 6 - Hackathons UK</h4>
+                  <p>Werewolf</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>10:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 7 - Hackathons UK</h4>
+                  <p>Super Smash Bros Tournament</p>
+                </div>
+              </div> 
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Meditation Room Opens</h4>
+                </div>
+              </div> 
+
+              <div class="row schedule-item">
+                <div class="col-md-10">
+                  <h4>Day 2</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Midnight Pizza!</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>2:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Movie</h4>
+                  <p>Home Alone</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>8:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Breakfast</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>9:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Devpost Submissions Begin</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>9:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Event 8 - ACSS</h4>
+                  <p>How to Make a Good Submission Workshop</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Hacking Ends!</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>11:00 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Lunch</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>12:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Demos Begin</h4>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>3:00 PM</time></div>
+                <div class="col-md-10">
+                  <h4>Closing Ceremony</h4>
+                  <p>Thank you for attending the event. We hope you enjoyed it!</p>
+                </div>
+              </div> 
+
+            </div>
+            <!-- End Schdule Day 1 -->
+
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+        <!--==========================
+          F.A.Q Section
+        ============================-->
+        <section id="faq" class="wow fadeInUp">
+
+          <div class="container">
+
+            <div class="section-header">
+              <h2>F.A.Q </h2>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                  <ul id="faq-list">
+
+                    <li>
+                      <a data-toggle="collapse" href="#faq8" class="collapsed">Is AstonHack going to be an in-person event? <i class="fa fa-minus-circle"></i></a>
+                      <div id="faq8" class="collapse" data-parent="#faq-list">
+                        <p>Yes, AstonHack7 will be hosted in the Aston University main building</p>
+                        
+                      </div>
+                    </li>
+
+                    <li>
+                      <a data-toggle="collapse" href="#faq5" class="collapsed">Why should you sponsor us? <i class="fa fa-minus-circle"></i></a>
+                      <div id="faq5" class="collapse" data-parent="#faq-list">
+                        <p>You can interact, identify and recruit students by hosting workshops, gaining recognition and discovering tech talent.
+                          You can also share your internship, placement and graduate schemes to a wide variety of students.</p>
+                        <p>AstonHack is offering 3 tiered sponsorship packages - Gold, Silver and Bronze. Your organisation would provide some combination
+                          of funding, tools, data, challenges with prizes, or API access to the value of the relevant tier.</p>
+                       <p>If you have suggestions of how your organisation could support us differently or questions about the tiers, we welcome you to get in touch.</p>
+                       <p>For more information, please download our sponsorship prospectus for AstonHack7 by clicking the link below.</p>
+                       <a href="prospectus/Prospectus.pdf" download="Prospectus">Download Prospectus</a>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a data-toggle="collapse" class="collapsed" href="#faq1">Who are we?<i class="fa fa-minus-circle"></i></a>
+                      <div id="faq1" class="collapse" data-parent="#faq-list">
+                        <p>We are the Aston Computer Science Society (ACSS). Coordinated by students powered with their excitement in tech, we welcome all to learn, share and have fun with computer science.</p>
+                        <p>AstonHack is presented in association with the ACSS - by students, for students.</P>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a data-toggle="collapse" href="#faq2" class="collapsed">What is a hackathon?<i class="fa fa-minus-circle"></i></a>
+                      <div id="faq2" class="collapse" data-parent="#faq-list">
+                        <p>A hackathon is where teams of up to 4 people work together to build an invention over a 24 hour period. Sponsors
+                          present themes for which prizes will be awarded and at the end of the event where teams will present their work to the judges.</p>
+                          <p>The goal of a hackathon is to create functioning software or hardware by the end of the event. Hackathons tend to have a
+                            specific focus, which can include the programming language used, the operating system, an application, an API, or the subject and the
+                            demographic group of the programmers.</p>
+                          <p>Whether you’re just getting started or you’ve been programming for years, hackathons are a great place to learn new skills, build your
+                            network, find jobs, and most importantly have fun.</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a data-toggle="collapse" href="#faq3" class="collapsed">How much does a hackathon cost? <i class="fa fa-minus-circle"></i></a>
+                      <div id="faq3" class="collapse" data-parent="#faq-list">
+                        <p>There is no admission fee as it is available at no charge to any attendee.</p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a data-toggle="collapse" href="#faq4" class="collapsed">Can I volunteer? <i class="fa fa-minus-circle"></i></a>
+                      <div id="faq4" class="collapse" data-parent="#faq-list">
+                        <p>Yes! To get involved, please read our <a class="faq-link" href="https://docs.google.com/document/d/1eOV1BltKyWnzsVM7wT4ORNA91229axu1XOJJBEAsF8c/edit?usp=sharing">volunteer booklet</a> and sign up <a class="faq-link" href='https://docs.google.com/forms/d/1zN40iW6BiEmfQAX6Fwwd4wxYrMOOwspg34H-mzeMecQ/edit'>here.</a></p>
+                      </div>
+                    </li>
+
+                    <!-- <li>
+                      <a data-toggle="collapse" href="#faq7" class="collapsed">Is there a code of conduct? <i class="fa fa-minus-circle"></i></a>
+                      <div id="faq7" class="collapse" data-parent="#faq-list">
+                        <p>We follow the MLH code of conduct strictly. To view their code of conduct please download by clicking the link below.</p>
+                        <a href="https://hackp.ac/coc">Download Code of Conduct</a>
+                      </div>
+                    </li> -->
+
+                  </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+          <p>Aston University Main Building</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://maps.google.com/maps?q=aston%20university%2C%20aston%20triangle&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <br><br>
+                <center><h3>Location:</h3>
+                <p>Aston University, Aston Street, Birmingham, B4 7ET</p></center>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>GET IN TOUCH</h2>
+          <p>CONTACT US</p>
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="https://gmail.us7.list-manage.com/subscribe/post?u=d73d0915a5b14a103b1669a2c&amp;id=67b5d0ffa2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text"  name="NAME" class="form-control" id="mce-NAME" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="SUBJECT" id="mce-SUBJECT" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="MESSAGE" rows="5" data-rule="required" id="mce-MESSAGE" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d73d0915a5b14a103b1669a2c_67b5d0ffa2" tabindex="-1" value=""></div>
+            <center><div class="text-center"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Send Message</button></div></center>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <center>
+              <br><br>
+              <a href="index.html"><img src="img/logo/logo.png"></a><br><br>
+              <a href="https://astoncss.com/"><img src="img/logo/acssLogo.png"></a><br><br>
+            </center>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <center><h4>Useful Links</h4></center>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="prospectus/Prospectus.pdf">Sponsorship</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="prospectus/CodeOfConduct.pdf">Code of Conduct</a></li>
+              <!-- <li><i class="fa fa-angle-right"></i> <a href="https://mlh.io/about">Major League Hacking</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+          <center><h4>Contact Us</h4>
+            <p>
+              Get in touch for any suggestions, queries or to have a discussion primarily by email at compsci.society@union.aston.ac.uk, and on our social media:
+              <a href="https://www.facebook.com/astonhack/"> Facebook</a>, <a href="https://www.instagram.com/astonhack/">Instagram </a> and <a href="https://twitter.com/AstonHack">Twitter</a>.
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/astonhack" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/astonhack/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/astonhack/?hl=en" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div></center>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <center>
+              <br><br>
+              <a href="https://www.aston.ac.uk/"><img src="img/logo/astonLogo.png"><br><br></a>
+              <a href="https://www.astonsu.com/"><img src="img/logo/astonSU.png"><br><br></a>
+              <br>
+            </center>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <p>Edited by <a href="https://github.com/yelloweq/">Iwo Grzes</a> based on <a href="https://aamnahramzan.github.io/aamnahramzan/">Aamnah Ramzan's</a> 2021 website</p>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <!-- <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+  href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+  target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a> -->
+</body>
+
+</html>
